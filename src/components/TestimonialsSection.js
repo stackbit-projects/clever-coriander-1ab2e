@@ -7,7 +7,7 @@ export default class TestimonialsSection extends React.Component {
         let testimonials = _.get(section, 'testimonials', null);
         return (
             <section className="content__row" data-id={_.get(section, 'section_id', null)}>
-                <h2 className="content__row-title">{_.get(section, 'title', null)}</h2>
+                
                 <div className="quotes">
                     {_.map(testimonials, (testimonial, testimonial_idx) => (<React.Fragment key={testimonial_idx + '.2'}>
                     <div key={testimonial_idx} className="quotes__item">
